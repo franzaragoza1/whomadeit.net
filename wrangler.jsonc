@@ -3,5 +3,10 @@
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./public"
-  }
+  },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "whomadeit.net", "custom_domain": true },
+    { "pattern": "www.whomadeit.net", "custom_domain": true }
+  ]
 }
