@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Made It?</title>
+<meta name="description" content="A slice of every ticket goes back to the producers whose music fills the room. Coming soon.">
+<meta property="og:title" content="Who Made It?">
+<meta property="og:description" content="A slice of every ticket goes back to the producers whose music fills the room. Coming soon.">
+<meta property="og:url" content="https://whomadeit.net">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230D0D0D'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='44' fill='%23fff'%3E%3F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;900&family=Unbounded:wght@800;900&display=swap">
+<style>
+:root{--bg:#0D0D0D;--fg:#FFFFFF;--muted:#BDBDBD}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.page{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;padding:28px 32px}
+header{display:flex;align-items:center}
+.icon{width:48px;height:48px;border-radius:50%;background:var(--fg);color:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:37px;line-height:1}
+.icon span{transform:translateY(-1px)}
+main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:40px;padding:48px 0}
+.block{width:min(560px,86vw);height:auto;display:block}
+.claim{margin:0;max-width:30ch;font-size:clamp(17px,2.2vw,21px);font-weight:500;line-height:1.45;color:var(--muted)}
+.soon{margin:0;font-family:'Unbounded',sans-serif;font-weight:800;font-size:13px;letter-spacing:.28em;text-transform:uppercase}
+footer{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.links{display:flex;flex-direction:column;gap:6px;font-size:15px;font-weight:500}
+.links a{color:var(--fg);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);align-self:flex-start}
+.links a:hover{border-bottom-color:var(--fg)}
+.seal{width:112px;height:112px;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.seal{animation:none}}
+@media (max-width:560px){.page{padding:20px}.seal{width:88px;height:88px}main{gap:32px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<div class="icon" aria-label="Who Made It?" role="img"><span>?</span></div>
+</header>
+
+<main>
+<h1 style="margin:0">
+<svg class="block" viewBox="0 0 540 276" role="img" aria-label="We support Who Made It?">
+<text x="-0.51" y="50" font-family="Unbounded, sans-serif" font-weight="900" font-size="63.41" fill="#FFFFFF">WE SUPPORT</text>
+<text x="-1.32" y="189.4" font-family="Unbounded, sans-serif" font-weight="900" font-size="164.53" fill="#FFFFFF">WHO</text>
+<text x="-5.27" y="271.3" font-family="Unbounded, sans-serif" font-weight="900" font-size="87.9" fill="#FFFFFF">MADE IT?</text>
+</svg>
+</h1>
+<p class="claim">A slice of every ticket goes back to the producers whose music fills the room.</p>
+<p class="soon">Coming soon</p>
+</main>
+
+<footer>
+<div class="links">
+<a href="mailto:hi@whomadeit.net">hi@whomadeit.net</a>
+<a href="https://instagram.com/whomadeit_net" target="_blank" rel="noopener">@whomadeit_net</a>
+</div>
+<svg class="seal" viewBox="0 0 560 560" role="img" aria-label="Supporting music producers · whomadeit.net">
+<defs><path id="seal" d="M 280,280 m -230,0 a 230,230 0 1,1 460,0 a 230,230 0 1,1 -460,0"/></defs>
+<circle cx="280" cy="280" r="268" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+<text font-family="Unbounded, sans-serif" font-weight="800" font-size="34" fill="#FFFFFF"><textPath href="#seal" textLength="1445" lengthAdjust="spacing">SUPPORTING MUSIC PRODUCERS · WHOMADEIT.NET · </textPath></text>
+<text x="281.3" y="319.4" text-anchor="middle" font-family="Unbounded, sans-serif" font-weight="900" font-size="105" fill="#FFFFFF">WHO</text>
+</svg>
+</footer>
+</div>
+</body>
+</html>
